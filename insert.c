@@ -3,21 +3,22 @@ int insert(int data,int pos,int a[],int last,int size);
 int shiftdown(int a[],int spos,int last);
 int main()
 {
-	int a[10]={2,3,4,5,6}
+	int a[10]={2,3,4,5,6};
 	int size=4;
 	int last=5;
 	int status,i;
 	int data,pos;
-	printf("Array elemnts are");
-	for(i=0;i<=last;i++)
+	printf("Array elemnts are:\n");
+	for(i=0;i<last;i++)
 	{
 		printf(" %d",a[i]);
 	}
-	printf("Entre data and position :");
+	printf("\n");
+	printf("Entre data and position :\n");
 	scanf("%d%d",&data,&pos);
 	pos=pos-1;
 	status=insert(data,pos,a,last,size);
-	for(i=0;i<=last+1;i++)
+	for(i=0;i<last+1;i++)
 	{
 		printf(" %d",a[i]);
 	}
@@ -68,8 +69,3 @@ int shiftdown(int a[],int spos,int last)
 		cur_pos--;
 	}	
 }
-
-
-
-
-
