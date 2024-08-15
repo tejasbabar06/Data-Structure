@@ -3,9 +3,9 @@ int insert(int data,int pos,int a[],int last,int size);
 int shiftdown(int a[],int spos,int last);
 int main()
 {
-	int a[10];
-	int size=10;
-	int last=-1;
+	int a[10]={2,3,4,5,6}
+	int size=4;
+	int last=5;
 	int status,i;
 	int data,pos;
 	printf("Array elemnts are");
